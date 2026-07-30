@@ -1,0 +1,51 @@
+<%- include("partials/header") %>
+
+<h1>👨‍🎓 Student List</h1>
+
+<p class="subtitle">
+
+Web Application Frameworks
+
+</p>
+
+<div class="grid">
+
+<% students.forEach(student=>{ %>
+
+<div class="student-card">
+
+<h3>
+
+<%= student.name %>
+
+</h3>
+
+<p>
+
+Grade :
+
+<span class="badge <%= student.grade.replace('+','plus').toLowerCase()%>">
+
+<%= student.grade %>
+
+</span>
+
+</p>
+
+</div>
+
+<% }) %>
+
+</div>
+
+<div style="text-align:center;margin-top:30px;">
+
+<a href="/" class="back-btn">
+
+🏠 Back Home
+
+</a>
+
+</div>
+
+<%- include("partials/footer") %>

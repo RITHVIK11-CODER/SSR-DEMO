@@ -1,0 +1,61 @@
+<%- include("partials/header") %>
+
+<% if(student){ %>
+
+<h1>🎓 Student Result</h1>
+
+<div class="result">
+
+<p><strong>Name :</strong> <%= student.name %></p>
+
+<p><strong>Subject :</strong> Web Application Frameworks</p>
+
+<p>
+
+<strong>Grade :</strong>
+
+<span class="badge <%= student.grade.replace('+','plus').toLowerCase() %>">
+
+<%= student.grade %>
+
+</span>
+
+</p>
+
+<div class="comment">
+
+<%= student.comment %>
+
+</div>
+
+</div>
+
+<% } else { %>
+
+<div class="error">
+
+<h2>❌ Student Not Found</h2>
+
+<p>Please check the student list.</p>
+
+</div>
+
+<% } %>
+
+<div style="text-align:center;margin-top:30px;">
+
+<a href="/search" class="back-btn">
+
+🔍 Search Again
+
+</a>
+
+<a href="/" class="back-btn">
+
+🏠 Home
+
+</a>
+
+</div>
+
+<%- include("partials/footer") %>
