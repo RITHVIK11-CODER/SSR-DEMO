@@ -310,6 +310,7 @@ By completing this project, you will understand:
 # 👨‍💻 Developed By
 
 **Name:** Rithvik Nag
+
 **Course:** B.Tech – Computer Science Engineering
 
 **Subject:** Web Application Frameworks
